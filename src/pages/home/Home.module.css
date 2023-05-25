@@ -1,0 +1,145 @@
+.explainerVideo {
+    margin-top: 40px;
+}
+
+.explainerVideo h2 {
+    text-align: center;
+    font-size: 28px;
+    color: #7E1CFE;
+    font-weight: 700;
+    margin-bottom: 28px;
+}
+.videowrapper {
+    width: 737px;
+    height: 415px;
+     margin: 0 auto;
+}
+
+.videowrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+.cardContainer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10px;
+}
+
+.creationSection {
+    margin: 40px 0;
+    text-align: center;
+}
+
+.creationSection div {
+    width: 795px;
+    margin: 0 auto;
+}
+
+.creationSection div:last-child {
+    margin-top: 40px;
+}
+
+.creationSection h6 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #7E1CFE;
+}
+
+.creationSection p {
+    font-size: 15px;
+}
+
+.newsSection {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.subscribeSection {
+    margin: 30px 0;
+}
+
+.subscribeSection h6{
+    text-align: center;
+    color: #7E1CFE;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.formContainer {
+    width: 582px;
+    margin: auto;
+}
+
+.formContainer input {
+    width: 283px;
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+    margin-right: 5px;
+    border-radius: 15px;
+    border: 1px solid #7E1CFE;
+    outline: none;
+}
+
+.formContainer input::placeholder {
+    text-align: center;
+    color: #754DE8;
+    font-size: 15px;
+}
+
+.formContainer button {
+    position: relative;
+    display: block;
+    width: 223px;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 15px;
+    border: 1px solid #7E1CFE;
+    box-shadow: 2px 2px 4px #7E1CFE;
+    color: #fff;
+    background: #754DE8;
+    margin: 30px auto;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+.formContainer button::after {
+    position: absolute;
+    content: "Notify Me";
+    text-align: 'center';
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #fff;
+    transform: translateX(-300px);
+    transition: transform 0.7s ease-in-out;
+    background: #fff;
+}
+
+.formContainer button:hover::after{
+     transform: translateX(0);
+     color: #7E1CFE;
+}
+
+.formContainer a {
+    display: block;
+    width: 340px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 15px;
+    color: #0085FF;
+    border-radius: 15px;
+    border: 1px solid #7E1CFE;
+    margin: 30px auto;
+}

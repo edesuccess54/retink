@@ -1,0 +1,40 @@
+.newsWrapper {
+    width: 300px;
+}
+
+.newsWrapper:hover{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+
+.newsImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.newsImage p {
+    position: relative;
+    font-size: 15px;
+    color: #393939;
+}
+
+.newsImage p::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 3px;
+    left: 0;
+    bottom: -8px;
+    background: #754DE8;
+}
+
+.newsContent {
+    font-size: 15px;
+    color: #000;
+    margin-top: 30px;
+
+}

@@ -1,0 +1,69 @@
+
+.forWrapper {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.inputGroup {
+    margin: 10px 0;
+}
+
+.inputGroup label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+.inputGroup input {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.loginBtn {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 8px;
+    min-width: 150px;
+    border-radius: 5px;
+    background: #7E1CFE;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.loginBtn::after {
+    position: absolute;
+    content: "Login";
+    text-align: 'center';
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #fff;
+    transform: translateX(-300px);
+    transition: transform 0.7s ease-in-out;
+    background: #fff;
+}
+
+.loginBtn:hover::after{
+     transform: translateX(0);
+     color: #7E1CFE;
+}
+
+.googleBtn {
+    padding: 8px;
+    background: transparent;
+    color: #1e1e1e;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    border: none;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+}
