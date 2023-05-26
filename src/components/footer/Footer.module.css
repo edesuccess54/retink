@@ -9,17 +9,18 @@
 .footerMenu {
     display: flex;
     justify-content: space-between;
-    height: 200px;
+    /* height: 200px; */
     padding: 40px;
     background: #D0D0D0;
 }
 
 .menu {
-    width: 450px;
+    max-width: 450px;
     padding: 0 10px;
     margin-top: 10px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .menu ul li {
@@ -58,9 +59,10 @@
 
 .copyright {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 5px;
     height: 60px;
     color: #fff;
     font-size: 12px;
@@ -70,4 +72,21 @@
 .copyright ul li{
     display: inline;
     margin: 0 5px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .footerMenu {
+        height: 200px;
+    }   
+
+    .menu {
+        width: 450px;
+    }
+
+    .copyright {
+        justify-content: space-around;
+        padding: 0 20px;
+    }
+
 }

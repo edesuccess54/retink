@@ -1,5 +1,5 @@
 .card {
-    width: 361px;
+    max-width: 300px;
     padding: 20px;
     border: 1px solid #fff;
     text-align: center;
@@ -30,5 +30,11 @@
 
     to{
         transform: rotate(5deg);
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        width: 361px;
     }
 }

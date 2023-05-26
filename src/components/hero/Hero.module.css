@@ -2,7 +2,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 336px;
+    flex-wrap: wrap;
+    min-height: 336px;
     margin-top: 40px;
 }
 
@@ -26,7 +27,7 @@
 }
 
 .desc {
-    margin-top: 100px;
+    margin-top: 50px;
     font-size: 20px;
     text-shadow: 1px 0px 1px #333;
 }
@@ -36,11 +37,17 @@
 }
 
 .heroImage {
-    width: 350px;
+    max-width: 350px;
 }
 
 .heroImage img {
     width: 100%;
     height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .heroImage {
+        width: 350px;
+    }
 }
 
